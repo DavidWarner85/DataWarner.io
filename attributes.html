@@ -7,25 +7,25 @@
 <h1> to <h6> 	Defines HTML headings
 
 <p> 	Defines a paragraph
-    
+
 <hr> 	Defines a thematic change in the content
 
 <br> 	Inserts a single line break
-    
+
 <pre> 	Defines pre-formatted text
 
-    Tag 	Description
-    <b> 	Defines bold text
-    <em> 	Defines emphasized text 
-    <i> 	Defines a part of text in an alternate voice or mood
-    <small> 	Defines smaller text
-    <strong> 	Defines important text
-    <sub> 	Defines subscripted text
-    <sup> 	Defines superscripted text
-    <ins> 	Defines inserted text
-    <del> 	Defines deleted text
-    <mark> 	Defines marked/highlighted text
-    
+Tag 	Description
+<b> 	Defines bold text
+<em> 	Defines emphasized text 
+<i> 	Defines a part of text in an alternate voice or mood
+<small> 	Defines smaller text
+<strong> 	Defines important text
+<sub> 	Defines subscripted text
+<sup> 	Defines superscripted text
+<ins> 	Defines inserted text
+<del> 	Defines deleted text
+<mark> 	Defines marked/highlighted text
+
 <abbr> 	Defines an abbreviation or acronym
 
 <address> 	Defines contact information for the author/owner of a document
@@ -38,19 +38,19 @@
 
 <q> 	Defines a short inline quotation
 
-    The target attribute can have one of the following values:
+The target attribute can have one of the following values:
 
-    _self - Default. Opens the document in the same window/tab as it was clicked
-    _blank - Opens the document in a new window or tab
-    _parent - Opens the document in the parent frame
-    _top - Opens the document in the full body of the window
+_self - Default. Opens the document in the same window/tab as it was clicked
+_blank - Opens the document in a new window or tab
+_parent - Opens the document in the parent frame
+_top - Opens the document in the full body of the window
 
-    
-    Use the <a> element to define a link
-        Use the href attribute to define the link address
-        Use the target attribute to define where to open the linked document
-        Use the <img> element (inside <a>) to use an image as a link
-        Use the mailto: scheme inside the href attribute to create a link that opens the user's email program
+
+Use the <a> element to define a link
+Use the href attribute to define the link address
+Use the target attribute to define where to open the linked document
+Use the <img> element (inside <a>) to use an image as a link
+Use the mailto: scheme inside the href attribute to create a link that opens the user's email program
 
 Abbreviation 	File Format 	File Extension
 APNG 	Animated Portable Network Graphics 	.apng
@@ -66,31 +66,191 @@ SVG 	Scalable Vector Graphics 	.svg
 <picture> 	Defines a container for multiple image resources
 
 
-    rect - defines a rectangular region
-    circle - defines a circular region
-    poly - defines a polygonal region
-    default - defines the entire region
+rect - defines a rectangular region
+circle - defines a circular region
+poly - defines a polygonal region
+default - defines the entire region
+
+Tag 	Description
+<table> 	Defines a table
+<th> 	Defines a header cell in a table
+<tr> 	Defines a row in a table
+<td> 	Defines a cell in a table
+<caption> 	Defines a table caption
+<colgroup> 	Specifies a group of one or more columns in a table for formatting
+<col> 	Specifies column properties for each column within a <colgroup> element
+<thead> 	Groups the header content in a table
+<tbody> 	Groups the body content in a table
+<tfoot> 	Groups the footer content in a table
+
+dotted     
+dashed     
+solid     
+double     
+groove     
+ridge     
+inset     
+outset     
+none     
+hidden    
+
+Tag 	Description
+<ul> 	Defines an unordered list
+<ol> 	Defines an ordered list
+<li> 	Defines a list item
+<dl> 	Defines a description list
+<dt> 	Defines a term in a description list
+<dd> 	Describes the term in a description list
+
+Value 	Description
+disc 	Sets the list item marker to a bullet (default)
+circle 	Sets the list item marker to a circle
+square 	Sets the list item marker to a square
+none 	The list items will not be marked
+
+Type 	Description
+type="1" 	The list items will be numbered with numbers (default)
+type="A" 	The list items will be numbered with uppercase letters
+type="a" 	The list items will be numbered with lowercase letters
+type="I" 	The list items will be numbered with uppercase roman numbers
+type="i" 	The list items will be numbered with lowercase roman numbers
+
+<ol start="50">
+
+<dl>
+<dt>Coffee</dt>
+<dd>- black hot drink</dd>
+<dt>Milk</dt>
+<dd>- white cold drink</dd>
+</dl> 
+
+Here are the block-level elements in HTML:
+<address>
+<article>
+<aside>
+<blockquote>
+<canvas>
+<dd>
+<div>
+<dl>
+<dt>
+<fieldset>
+<figcaption>
+<figure>
+<footer>
+<form>
+<h1>-<h6>
+<header>
+<hr>
+<li>
+<main>
+<nav>
+<noscript>
+<ol>
+<p>
+<pre>
+<section>
+<table>
+<tfoot>
+<ul>
+<video>
+
+Here are the inline elements in HTML:
+<a>
+<abbr>
+<acronym>
+<b>
+<bdo>
+<big>
+<br>
+<button>
+<cite>
+<code>
+<dfn>
+<em>
+<i>
+<img>
+<input>
+<kbd>
+<label>
+<map>
+<object>
+<output>
+<q>
+<samp>
+<script>
+<select>
+<small>
+<span>
+<strong>
+<sub>
+<sup>
+<textarea>
+<time>
+<tt>
+<var>
+
+Path	Description
+<img src="picture.jpg"> 	The "picture.jpg" file is located in the same folder as the current page
+<img src="images/picture.jpg"> 	The "picture.jpg" file is located in the images folder in the current folder
+<img src="/images/picture.jpg"> 	The "picture.jpg" file is located in the images folder at the root of the current web
+<img src="../picture.jpg"> 	The "picture.jpg" file is located in the folder one level up from the current folder
+
+Tag 	Description
+<head> 	Defines information about the document
+<title> 	Defines the title of a document
+<base> 	Defines a default address or a default target for all links on a page
+<link> 	Defines the relationship between a document and an external resource
+<meta> 	Defines metadata about an HTML document
+<script> 	Defines a client-side script
+<style> 	Defines style information for a document
+
+Define the character set used:
+<meta charset="UTF-8">
+
+Define keywords for search engines:
+<meta name="keywords" content="HTML, CSS, JavaScript">
+
+Define a description of your web page:
+<meta name="description" content="Free Web tutorials">
+
+Define the author of a page:
+<meta name="author" content="John Doe">
+
+Refresh document every 30 seconds:
+<meta http-equiv="refresh" content="30">
+
+Setting the viewport to make your website look good on all devices:
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    <header> - Defines a header for a document or a section
+    <nav> - Defines a set of navigation links
+    <section> - Defines a section in a document
+    <article> - Defines an independent, self-contained content
+    <aside> - Defines content aside from the content (like a sidebar)
+    <footer> - Defines a footer for a document or a section
+    <details> - Defines additional details that the user can open and close on demand
+    <summary> - Defines a heading for the <details> element
+
+        <code> 	Defines programming code
+<kbd> 	Defines keyboard input 
+<samp> 	Defines computer output
+<var> 	Defines a variable
+<pre> 	Defines preformatted text
 
     Tag 	Description
-    <table> 	Defines a table
-    <th> 	Defines a header cell in a table
-    <tr> 	Defines a row in a table
-    <td> 	Defines a cell in a table
-    <caption> 	Defines a table caption
-    <colgroup> 	Specifies a group of one or more columns in a table for formatting
-    <col> 	Specifies column properties for each column within a <colgroup> element
-    <thead> 	Groups the header content in a table
-    <tbody> 	Groups the body content in a table
-    <tfoot> 	Groups the footer content in a table
-
-        dotted     
-        dashed     
-        solid     
-        double     
-        groove     
-        ridge     
-        inset     
-        outset     
-        none     
-        hidden    
+<article> 	Defines independent, self-contained content
+<aside> 	Defines content aside from the page content
+<details> 	Defines additional details that the user can view or hide
+<figcaption> 	Defines a caption for a <figure> element
+<figure> 	Specifies self-contained content, like illustrations, diagrams, photos, code listings, etc.
+<footer> 	Defines a footer for a document or section
+<header> 	Specifies a header for a document or section
+<main> 	Specifies the main content of a document
+<mark> 	Defines marked/highlighted text
+<nav> 	Defines navigation links
+<section> 	Defines a section in a document
+<summary> 	Defines a visible heading for a <details> element
+<time> 	Defines a date/time
 
