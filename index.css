@@ -1,0 +1,13 @@
+Full Syntax
+body {
+    background-image: url("img_tree.png");
+    background-repeat: no-repeat;
+    background-position: right top;
+    background-attachment: scroll;
+  }
+Shorthand
+  body {
+    background: #ffffff url("img_tree.png") no-repeat right top;
+  }
+
+  
