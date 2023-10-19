@@ -235,3 +235,43 @@ Property 	Description
 display 	Specifies how an element should be displayed
 visibility 	Specifies whether or not an element should be visible
 
+<style>
+.container {
+  position: relative;
+}
+
+.black-box {
+  position: relative;
+  z-index: 1;
+  border: 2px solid black;
+  height: 100px;
+  margin: 30px;
+}
+
+.gray-box {
+  position: absolute;
+  z-index: 3;
+  background: lightgray;
+  height: 60px;
+  width: 70%;
+  left: 50px;
+  top: 50px;
+}
+
+.green-box {
+  position: absolute;
+  z-index: 2;
+  background: lightgreen;
+  width: 35%;
+  left: 270px;
+  top: -15px;
+  height: 100px;
+}
+</style>
+
+Property 	Description
+overflow 	Specifies what happens if content overflows an element's box
+overflow-wrap 	Specifies whether or not the browser can break lines with long words, if they overflow its container
+overflow-x 	Specifies what to do with the left/right edges of the content if it overflows the element's content area
+overflow-y 	Specifies what to do with the top/bottom edges of the content if it overflows the element's content area
+
