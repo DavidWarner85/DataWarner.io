@@ -275,3 +275,17 @@ overflow-wrap 	Specifies whether or not the browser can break lines with long wo
 overflow-x 	Specifies what to do with the left/right edges of the content if it overflows the element's content area
 overflow-y 	Specifies what to do with the top/bottom edges of the content if it overflows the element's content area
 
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+Property 	Description
+box-sizing 	Defines how the width and height of an element are calculated: should they include padding and borders, or not
+clear 	Specifies what should happen with the element that is next to a floating element
+float 	Specifies whether an element should float to the left, right, or not at all
+overflow 	Specifies what happens if content overflows an element's box
+overflow-x 	Specifies what to do with the left/right edges of the content if it overflows the element's content area
+overflow-y 	Specifies what to do with the top/bottom edges of the content if it overflows the element's content area
+
