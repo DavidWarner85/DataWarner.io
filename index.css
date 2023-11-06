@@ -577,3 +577,58 @@ animation-iteration-count 	Specifies the number of times an animation should be 
 animation-name 	Specifies the name of the @keyframes animation
 animation-play-state 	Specifies whether the animation is running or paused
 animation-timing-function 	Specifies the speed curve of the animation
+
+<style>
+/* Tooltip container */
+.tooltip {
+  position: relative;
+  display: inline-block;
+  border-bottom: 1px dotted black; /* If you want dots under the hoverable text */
+}
+
+/* Tooltip text */
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 120px;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  padding: 5px 0;
+  border-radius: 6px;
+ 
+  /* Position the tooltip text - see examples below! */
+  position: absolute;
+  z-index: 1;
+}
+
+/* Show the tooltip text when you mouse over the tooltip container */
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+}
+</style>
+
+<div class="tooltip">Hover over me
+  <span class="tooltiptext">Tooltip text</span>
+</div> 
+
+.mask1 {
+  -webkit-mask-image: linear-gradient(black, transparent);
+  mask-image: linear-gradient(black, transparent);
+}
+
+.mask1 {
+  -webkit-mask-image: linear-gradient(black, transparent);
+  mask-image: linear-gradient(black, transparent);
+}
+
+CSS Masking Properties
+
+The following table lists all the CSS masking properties:
+Property 	Description
+mask-image 	Specifies an image to be used as a mask layer for an element
+mask-mode 	Specifies whether the mask layer image is treated as a luminance mask or as an alpha mask
+mask-origin 	Specifies the origin position (the mask position area) of a mask layer image
+mask-position 	Sets the starting position of a mask layer image (relative to the mask position area)
+mask-repeat 	Specifies how the mask layer image is repeated
+mask-size 	Specifies the size of a mask layer image
+
