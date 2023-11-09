@@ -665,3 +665,14 @@ button {
   padding: 5px;
 }
 
+* {
+  box-sizing: border-box;
+}
+
+.flex-container {
+  display: flex;
+  height: 300px;
+  justify-content: center;
+  align-items: center;
+}
+
